@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Pulling latest code from Git'
-                    sh 'git pull origin exi17' // Change branch if needed
+                    sh 'git pull origin exit17' // Change branch if needed
                 }
             }
         }
