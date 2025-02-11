@@ -1,0 +1,5 @@
+pyds
+requests
+opencv-python
+shapely
+kafka-python

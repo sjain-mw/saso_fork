@@ -1,0 +1,76 @@
+{
+    "0":{
+        "uri":"rtsp://admin:Q12345678q@192.168.100.48:554/Streaming/Channels/101",
+        "uuid":"",
+        "stageId":"3a7377bd-133c-4972-967f-2cd1c5b3bbd6",
+        "stationID":"1c52645e-caa2-4d4d-8a37-e6a22350bf0b",
+        "cameraId":"1a0439d7-4826-4d21-a7c9-02fe258a3c16",
+        "laneId":"cb862b21-7043-4831-9c25-3caf19caad1b",
+        "useCaseType":"stagesCameras",
+        "functionName":"entry_exit_utils.entry_exit_update",
+        "name":"top_ub_6",
+        "type": "lpr"
+
+    },
+    "1":{
+        "uri":"rtsp://admin:Q12345678q@192.168.100.29:554/Streaming/Channels/101",
+        "uuid":"",
+        "stageId":"3a7377bd-133c-4972-967f-2cd1c5b3bbd6",
+        "stationID":"1c52645e-caa2-4d4d-8a37-e6a22350bf0b",
+        "cameraId":"0ad42645-d0f3-4ad9-863c-b895aadf26f3",
+        "laneId":"cb862b21-7043-4831-9c25-3caf19caad1b",
+        "useCaseType":"stagesCameras",
+        "functionName":"check_utils.under_body_check",
+        "name":"bottom_ub_6",
+        "type": "check"
+    },
+    "2":{
+        "uri":"rtsp://admin:Q12345678q@192.168.100.41:554/Streaming/Channels/101",
+        "uuid":"",
+        "stageId":"17316515-4fe0-4674-9aba-dec0b745c2a9",
+        "stationID":"1c52645e-caa2-4d4d-8a37-e6a22350bf0b",
+        "cameraId":"52a9acb0-8de0-4883-9e6c-f47dc3b85df8",
+        "laneId":"cb862b21-7043-4831-9c25-3caf19caad1b",
+        "useCaseType":"stagesCameras",
+        "functionName":"entry_exit_utils.entry_exit_360_update",
+        "name":"top_360_6",
+        "type": "check"
+    },
+   
+    "3":{
+        "uri":"rtsp://admin:Q12345678q@192.168.100.43:554/Streaming/Channels/101",
+        "uuid":"",
+        "stageId":"0c6c85ee-b092-4af2-b61c-adc9c9bbf5af",
+        "stationID":"1c52645e-caa2-4d4d-8a37-e6a22350bf0b",
+        "cameraId":"1465a6d8-333c-4bbc-9079-75de8c4851f3",
+        "laneId":"cb862b21-7043-4831-9c25-3caf19caad1b",
+        "useCaseType":"stagesCameras",
+        "functionName":"entry_exit_utils.entry_exit_update",
+        "name":"top_break_6",
+        "type": "lpr"
+    },
+    "4":{
+        "uri":"rtsp://admin:Q12345678q@192.168.100.33:554/Streaming/Channels/101",
+        "uuid":"",
+        "stageId":"17316515-4fe0-4674-9aba-dec0b745c2a9",
+        "stationID":"1c52645e-caa2-4d4d-8a37-e6a22350bf0b",
+        "cameraId":"0ad63dd3-1fd2-41cb-b753-8c3d8f49069a",
+        "laneId":"cb862b21-7043-4831-9c25-3caf19caad1b",
+        "useCaseType":"stagesCameras",
+        "functionName":"",
+        "name":"bottom_360_6",
+        "type": "lpr"
+    },
+    "5":{
+        "uri":"rtsp://admin:Q12345678q@192.168.100.56:554/Streaming/Channels/101",
+        "uuid":"",
+        "stageId":"3bb7eaa7-1925-4503-8d01-643bd2174494",
+        "stationID":"1c52645e-caa2-4d4d-8a37-e6a22350bf0b",
+        "cameraId":"10977204-c62e-4fb9-8abe-b0c1419c53d0",
+        "laneId":"cb862b21-7043-4831-9c25-3caf19caad1b",
+        "useCaseType":"stagesCameras",
+        "functionName":"check_utils.carbon_check",
+        "name":"top_carbon_6",
+        "type": "lpr"
+    }
+}

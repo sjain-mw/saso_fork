@@ -1,0 +1,166 @@
+# The values in the config file are overridden by values set through GObject
+# properties.
+
+[property]
+enable=1
+#Width height used for configuration to which below configs are configured
+config-width=3840
+config-height=2160
+#osd-mode 0: Dont display any lines, rois and text
+#         1: Display only lines, rois and static text i.e. labels
+#         2: Display all info from 1 plus information about counts
+osd-mode=2
+#Set OSD font size that has to be displayed
+display-font-size=8
+
+#########################################################################################
+
+## 0 - 360_5 - lpr
+
+[roi-filtering-stream-0]
+
+#enable or disable following feature
+enable=1
+#gpu-id=0
+class-id = 0;6
+#ROI to filter select objects, and remove from meta data
+roi-lpr_360_5= 2128 ; 1105 ;3067 ; 1250 ;1645 ; 2150 ;541 ; 1521
+
+#########################################################################################
+
+
+## 1 - 360_5 - top
+
+[roi-filtering-stream-1]
+
+#enable or disable following feature
+enable=1
+#gpu-id=0
+class-id = 0;6
+#ROI to filter select objects, and remove from meta data
+roi-lane_360_5=1056 ; 2135 ;2776 ; 2105 ;2246 ; 27 ;1386 ; 33
+#roi-lpr_360_5=1361 ; 1126 ;2645 ; 1126 ;2715 ; 2069 ;1133 ; 2047
+
+[line-crossing-stream-1]
+ 
+enable=0
+ 
+class-id =0;6
+#Label;direction;lc
+line-crossing-Entry_360_5= 1925 ; 2132 ; 1916 ; 2067 ;1056 ; 2135 ; 2776 ; 2105
+line-crossing-Exit_360_5=  1826 ; 72 ; 1819 ; 11 ;2246 ; 27 ; 1386 ; 33
+
+#########################################################################################
+
+## 7 - break_5
+[roi-filtering-stream-2]
+gpu-id=0
+
+#enable or disable following feature
+enable=1
+class-id = 0;7
+#ROI to filter select objects, and remove from meta data
+roi-front_break_5=744 ; 1198 ;1717 ; 1755 ;2275 ; 1345 ;1401 ; 758
+roi-tyre_break_5=1564 ; 936 ; 1978 ; 788 ; 2952 ; 888 ; 2758 ; 1100 
+roi-lane_break_5=334 ; 1279 ;1383 ; 2033 ;2964 ; 875 ;2216 ; 787
+roi-lpr_break_5=334 ; 1279 ;1383 ; 2033 ;2964 ; 875 ;2216 ; 787
+[line-crossing-stream-2]
+
+enable=0
+gpu-id=0
+
+class-id =0;7
+#Label;direction;lc
+line-crossing-Entry_break_5 = 2490 ; 776 ; 2370 ; 880 ;334 ; 1279 ; 1383 ; 2033
+line-crossing-Exit_break_5 = 878 ; 1521 ; 708 ; 1604 ;2964 ; 875 ; 2216 ; 787
+
+
+#extended when 0- only counts crossing on the configured Line
+#              1- assumes extended Line crossing counts all the crossing
+extended=0
+#LC modes supported:
+#loose   : counts all crossing without strong adherence to direction
+#balanced: Strict direction adherence expected compared to mode=loose
+#strict  : Strict direction adherence expected compared to mode=balanced
+mode=loose
+
+#########################################################################################
+
+## 7 - carbon_5
+
+[roi-filtering-stream-3]
+
+#enable or disable following feature
+enable=1
+class-id = 0;1;3;4
+#ROI to filter select objects, and remove from meta data
+roi-lane_carbon_5= 320 ; 1100 ; 1178 ; 994 ; 2018 ; 1136 ; 510 ; 1448
+roi-lpr_carbon_5= 320 ; 1100 ; 1178 ; 994 ; 2018 ; 1136 ; 510 ; 1448
+
+
+[line-crossing-stream-3]
+
+enable=0
+
+class-id =0
+#Label;direction;lc
+line-crossing-Entry_carbon_5=1590 ; 1354 ; 1256 ; 1212 ; 2018 ; 1136 ; 510 ; 1448
+line-crossing-Exit_carbon_5= 882 ; 1084 ; 720 ; 998 ; 320 ; 1100 ; 1178 ; 994
+
+
+#extended when 0- only counts crossing on the configured Line
+#              1- assumes extended Line crossing counts all the crossing
+extended=0
+#LC modes supported:
+#loose   : counts all crossing without strong adherence to direction
+#balanced: Strict direction adherence expected compared to mode=loose
+#strict  : Strict direction adherence expected compared to mode=balanced
+mode=loose
+
+#########################################################################################
+
+## 7 - exit_5 (ub_top)
+
+[roi-filtering-stream-4]
+#enable or disable following feature
+enable=1
+#gpu-id=0
+class-id =0;6
+#ROI to filter select objects, and remove from meta data
+roi-lane_ub_5= 1984 ; 900 ;2598 ; 864 ;2460 ; 1886 ;1033 ; 1902
+roi-lpr_ub_5=1984 ; 900 ;2598 ; 864 ;2460 ; 1886 ;1033 ; 1902
+#roi-lpr_ub_5= 1794 ; 841 ;2708 ; 1006 ;2548 ; 1419 ;1424 ; 1144
+ 
+[line-crossing-stream-4]
+ 
+enable=0
+#gpu-id=0
+ 
+class-id =0;6
+#Label;direction;lc
+line-crossing-Entry_ub_5=2388 ; 679 ; 2155 ; 1092 ;1984 ; 900 ; 2598 ; 864
+line-crossing-Exit_ub_5= 1907 ; 1518 ; 1652 ; 2105 ;2460 ; 1886 ; 1033 ; 1902
+ 
+#extended when 0- only counts crossing on the configured Line
+#              1- assumes extended Line crossing counts all the crossing
+extended=0
+#LC modes supported:
+#loose   : counts all crossing without strong adherence to direction
+#balanced: Strict direction adherence expected compared to mode=loose
+#strict  : Strict direction adherence expected compared to mode=balanced
+mode=loose
+
+#########################################################################################
+
+## 7 - exit_5
+
+[roi-filtering-stream-5]
+
+#enable or disable following feature
+enable=1
+#gpu-id=0
+class-id = 8
+#ROI to filter select objects, and remove from meta data
+roi-lane_ub_5= 1536 ; 1065 ;2035 ; 1084 ;2284 ; 2131 ;979 ; 2121
+
+#########################################################################################

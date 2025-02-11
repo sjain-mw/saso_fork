@@ -1,0 +1,15 @@
+*.engine
+*.onnx
+*.pt
+*.etlt
+*.etlt.1
+*.log
+*.mp4
+*.jpg
+*.pyc
+*.so
+*.o
+
+/videos
+/__pycache__
+

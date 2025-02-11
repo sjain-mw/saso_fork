@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  kafka:
+    image: apache/kafka:3.7.0
+    ports:
+      - "9092:9092"
+    deploy:
+      restart_policy:
+        condition: always
+    
+
+  saso_service:
+    image: nvcr.io/nvidia/deepstream:7.0-triton-multiarch
+    container_name: saso_container
+    runtime: nvidia
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
+      - /home/baseer/home/saso-cv:/host_data/saso  # Path matches where you need it mounted
+      - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
+    devices:
+      - /dev/snd:/dev/snd  # Access to sound device
+    privileged: true
+    network_mode: host
+    working_dir: /host_data/saso/deep_stream_scripts
+    command: /host_data/saso/entrypoint.sh
+    depends_on:
+      - kafka
+    deploy:
+      restart_policy:
+        condition: always
+
+
+
