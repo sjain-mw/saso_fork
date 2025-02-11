@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     echo 'Stopping existing containers'
-                    sh "echo '7631' | sudo -S docker compose down"
+                    sh 'docker compose down'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     echo 'Starting containers in detached mode'
-                    sh "echo '7631' | sudo -S docker compose up -d"
+                    sh 'docker compose up -d'
                 }
             }
         }
