@@ -1,0 +1,43 @@
+{
+    "RTSP_LINKS": {
+        "lane1": {
+            "lane1_360_lpr": "rtsp://admin:Q12345678q@192.168.8.5:554/Streaming/channels/101",
+            "lane1_360_check": "rtsp://admin:Q12345678q@192.168.8.15:554/Streaming/channels/101",
+            "lane1_ubtopfront_lpr": "rtsp://admin:Q12345678q@192.168.8.29:554/Streaming/channels/101",
+            "lane1_ubtopback_lpr": "rtsp://admin:Q12345678q@192.168.8.11:554/Streaming/channels/101",
+            "lane1_ubbottomfront_check": "rtsp://admin:Q12345678q@192.168.8.22:554/Streaming/channels/101",
+            "lane1_ubbottomback_check": "rtsp://admin:Q12345678q@192.168.8.12:554/Streaming/channels/101",
+            "lane1_brake_lpr": "rtsp://admin:Q12345678q@192.168.8.57:554/Streaming/channels/101"
+        },
+        "lane2": {
+            "lane2_360_lpr": "rtsp://admin:Q12345678q@192.168.8.6:554/Streaming/channels/101",
+            "lane2_360_check": "rtsp://admin:Q12345678q@192.168.8.18:554/Streaming/channels/101",
+            "lane2_ubtopfront_lpr": "rtsp://admin:Q12345678q@192.168.8.2:554/Streaming/channels/101",
+            "lane2_ubtopback_lpr": "rtsp://admin:Q12345678q@192.168.8.13:554/Streaming/channels/101",
+            "lane2_ubbottomfront_check": "rtsp://admin:Q12345678q@192.168.8.19:554/Streaming/channels/101",
+            "lane2_ubbottomback_check": "rtsp://admin:Q12345678q@192.168.8.23:554/Streaming/channels/101",
+            "lane2_brake_lpr": "rtsp://admin:Q12345678q@192.168.8.34:554/Streaming/channels/101"
+        },
+        "lane3": {
+            "lane3_360_lpr": "rtsp://admin:Q12345678q@192.168.8.3:554/Streaming/channels/101",
+            "lane3_360_check": "rtsp://admin:Q12345678q@192.168.8.30:554/Streaming/channels/101",
+            "lane3_ubtopfront_lpr": "rtsp://admin:Q12345678q@192.168.8.4:554/Streaming/channels/101",
+            "lane3_ubtopback_lpr": "rtsp://admin:Q12345678q@192.168.8.41:554/Streaming/channels/101",
+            "lane3_ubbottomfront_check": "rtsp://admin:Q12345678q@192.168.8.59:554/Streaming/channels/101",
+            "lane3_ubbottomback_check": "rtsp://admin:Q12345678q@192.168.8.16:554/Streaming/channels/101",
+            "lane3_brake_lpr": "rtsp://admin:Q12345678q@192.168.8.10:554/Streaming/channels/101"
+        },
+        "lane4": {
+            "lane4_360_lpr": "rtsp://admin:Q12345678q@192.168.8.7:554/Streaming/channels/101",
+            "lane4_360_check": "rtsp://admin:Q12345678q@192.168.8.8:554/Streaming/channels/101",
+            "lane4_ubtopfront_lpr": "rtsp://admin:Q12345678q@192.168.8.20:554/Streaming/channels/101",
+            "lane4_ubtopback_lpr": "rtsp://admin:Q12345678q@192.168.8.33:554/Streaming/channels/101",
+            "lane4_ubbottomfront_check": "rtsp://admin:Q12345678q@192.168.8.25:554/Streaming/channels/101",
+            "lane4_ubbottomback_check": "rtsp://admin:Q12345678q@192.168.8.17:554/Streaming/channels/101",
+            "lane4_brake_lpr": "rtsp://admin:Q12345678q@192.168.8.55:554/Streaming/channels/101"
+        },
+        "lane_right": {
+            "lane_right_main_lpr": "rtsp://admin:Q12345678q@192.168.8.14:554/Streaming/channels/101"
+        }
+    }
+}

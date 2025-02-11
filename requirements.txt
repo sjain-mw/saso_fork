@@ -3,3 +3,6 @@ requests
 opencv-python
 shapely
 kafka-python
+Levenshtein==0.26.1
+RapidFuzz==3.10.1
+confluent-kafka==2.6.1

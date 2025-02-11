@@ -2,35 +2,272 @@ version: '3.8'
 
 services:
   kafka:
-    image: apache/kafka:3.7.0
+    image: apache/kafka-native:3.8.0
     ports:
       - "9092:9092"
     deploy:
       restart_policy:
         condition: always
     
-
-  saso_service:
-    image: nvcr.io/nvidia/deepstream:7.0-triton-multiarch
-    container_name: saso_container
+  saso_inference_lane1:
+    image: saso:latest
+    container_name: saso_inference_lane1
     runtime: nvidia
+    command: /usr/bin/python3 inference.py
     environment:
       - DISPLAY=${DISPLAY}
+      - CUDA_VISIBLE_DEVICES=0
+      - logfilename=saso_inference_lane1
+      - test=1
+      - LANE_TO_USE=lane1
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
-      - /home/baseer/home/saso-cv:/host_data/saso  # Path matches where you need it mounted
+      - /home/saso_exit17/saso-cv:/host_data/saso  # Path matches where you need it mounted
       - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
     devices:
       - /dev/snd:/dev/snd  # Access to sound device
     privileged: true
     network_mode: host
-    working_dir: /host_data/saso/deep_stream_scripts
-    command: /host_data/saso/entrypoint.sh
+    working_dir: /host_data/saso/src
+    depends_on:
+      - kafka
+    deploy:
+      restart_policy:
+        condition: always
+  
+  saso_logic_lane1:
+    image: saso:latest
+    container_name: saso_logic_lane1
+    runtime: nvidia
+    command: /usr/bin/python3 logic.py
+    environment:
+      - DISPLAY=${DISPLAY}
+      - CUDA_VISIBLE_DEVICES=0
+      - logfilename=saso_logic_lane1
+      - test=0
+      - LANE_TO_USE=lane1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
+      - /home/saso_exit17/saso-cv:/host_data/saso  # Path matches where you need it mounted
+      - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
+    devices:
+      - /dev/snd:/dev/snd  # Access to sound device
+    privileged: true
+    network_mode: host
+    working_dir: /host_data/saso/src
+    depends_on:
+      - kafka
+      - saso_inference_lane1
+    deploy:
+      restart_policy:
+        condition: always
+      
+
+  
+
+  saso_inference_lane2:
+    image: saso:latest
+    container_name: saso_inference_lane2
+    runtime: nvidia
+    command: /usr/bin/python3 inference.py
+    environment:
+      - DISPLAY=${DISPLAY}
+      - CUDA_VISIBLE_DEVICES=0
+      - logfilename=saso_inference_lane2
+      - test=0
+      - LANE_TO_USE=lane2
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
+      - /home/saso_exit17/saso-cv:/host_data/saso  # Path matches where you need it mounted
+      - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
+    devices:
+      - /dev/snd:/dev/snd  # Access to sound device
+    privileged: true
+    network_mode: host
+    working_dir: /host_data/saso/src
     depends_on:
       - kafka
     deploy:
       restart_policy:
         condition: always
 
+  saso_logic_lane2:
+    image: saso:latest
+    container_name: saso_logic_lane2
+    runtime: nvidia
+    command: /usr/bin/python3 logic.py
+    environment:
+      - DISPLAY=${DISPLAY}
+      - CUDA_VISIBLE_DEVICES=0
+      - logfilename=saso_logic_lane2
+      - test=0
+      - LANE_TO_USE=lane2
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
+      - /home/saso_exit17/saso-cv:/host_data/saso  # Path matches where you need it mounted
+      - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
+    devices:
+      - /dev/snd:/dev/snd  # Access to sound device
+    privileged: true
+    network_mode: host
+    working_dir: /host_data/saso/src
+    depends_on:
+      - kafka
+      - saso_inference_lane2
+    deploy:
+      restart_policy:
+        condition: always
 
+  saso_inference_lane3:
+    image: saso:latest
+    container_name: saso_inference_lane3
+    runtime: nvidia
+    command: /usr/bin/python3 inference.py
+    environment:
+      - DISPLAY=${DISPLAY}
+      - CUDA_VISIBLE_DEVICES=1
+      - logfilename=saso_inference_lane3
+      - test=0
+      - LANE_TO_USE=lane3
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
+      - /home/saso_exit17/saso-cv:/host_data/saso  # Path matches where you need it mounted
+      - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
+    devices:
+      - /dev/snd:/dev/snd  # Access to sound device
+    privileged: true
+    network_mode: host
+    working_dir: /host_data/saso/src
+    depends_on:
+      - kafka
+    deploy:
+      restart_policy:
+        condition: always
 
+  saso_logic_lane3:
+    image: saso:latest
+    container_name: saso_logic_lane3
+    runtime: nvidia
+    command: /usr/bin/python3 logic.py
+    environment:
+      - DISPLAY=${DISPLAY}
+      - CUDA_VISIBLE_DEVICES=1
+      - logfilename=saso_logic_lane3
+      - test=0
+      - LANE_TO_USE=lane3
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
+      - /home/saso_exit17/saso-cv:/host_data/saso  # Path matches where you need it mounted
+      - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
+    devices:
+      - /dev/snd:/dev/snd  # Access to sound device
+    privileged: true
+    network_mode: host
+    working_dir: /host_data/saso/src
+    depends_on:
+      - kafka
+      - saso_inference_lane3
+    deploy:
+      restart_policy:
+        condition: always
+
+  saso_inference_lane4:
+    image: saso:latest
+    container_name: saso_inference_lane4
+    runtime: nvidia
+    command: /usr/bin/python3 inference.py
+    environment:
+      - DISPLAY=${DISPLAY}
+      - CUDA_VISIBLE_DEVICES=1
+      - logfilename=saso_inference_lane4
+      - test=0
+      - LANE_TO_USE=lane4
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
+      - /home/saso_exit17/saso-cv:/host_data/saso  # Path matches where you need it mounted
+      - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
+    devices:
+      - /dev/snd:/dev/snd  # Access to sound device
+    privileged: true
+    network_mode: host
+    working_dir: /host_data/saso/src
+    depends_on:
+      - kafka
+    deploy:
+      restart_policy:
+        condition: always
+  
+  saso_logic_lane4:
+    image: saso:latest 
+    container_name: saso_logic_lane4
+    runtime: nvidia
+    command: /usr/bin/python3 logic.py
+    environment:
+      - DISPLAY=${DISPLAY}
+      - CUDA_VISIBLE_DEVICES=1
+      - logfilename=saso_logic_lane4
+      - test=0
+      - LANE_TO_USE=lane4
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
+      - /home/saso_exit17/saso-cv:/host_data/saso  # Path matches where you need it mounted
+      - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
+    devices:
+      - /dev/snd:/dev/snd  # Access to sound device
+    privileged: true
+    network_mode: host
+    working_dir: /host_data/saso/src
+    depends_on:
+      - kafka
+      - saso_inference_lane4
+    deploy:
+      restart_policy:
+        condition: always
+  
+  
+  saso_cv_main_entrance:
+      image: saso:latest
+      container_name: saso_cv_main_entrance
+      runtime: nvidia
+      command: /usr/bin/python3 saso_exit1_prod.py
+      environment:
+        - DISPLAY=${DISPLAY}
+        - CUDA_VISIBLE_DEVICES=1
+        - logfilename=saso_cv_lane_main_entrance
+        - images_folder=img_me
+        - input_config=/host_data/saso/configs/input_config_me.json
+        - test=0
+      volumes:
+        - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
+        - /home/saso_exit17/saso-cv-me:/host_data/saso  # Path matches where you need it mounted
+        - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
+      devices:
+        - /dev/snd:/dev/snd  # Access to sound device
+      privileged: true
+      network_mode: host
+      working_dir: /host_data/saso/deep_stream_scripts
+      depends_on:
+        - kafka
+      deploy:
+        restart_policy:
+          condition: always
+
+  kafka_relay:
+    image: saso:latest
+    container_name: kafka_relay
+    runtime: nvidia
+    command: /usr/bin/python3 kafka_relay.py
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # For X11 forwarding
+      - /home/saso_exit17/saso-cv:/host_data/saso  # Path matches where you need it mounted
+      - /etc/localtime:/etc/localtime:ro  # Ensure timezone synchronization
+    devices:
+      - /dev/snd:/dev/snd  # Access to sound device
+    privileged: true
+    network_mode: host
+    working_dir: /host_data/saso/src
+    depends_on:
+      - kafka
+    deploy:
+      restart_policy:
+        condition: always

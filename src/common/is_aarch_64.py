@@ -15,25 +15,11 @@
 # limitations under the License.
 ################################################################################
 
-import gi
+import platform
 import sys
-gi.require_version('Gst', '1.0')
-from gi.repository import GObject, Gst
-from ..src import logger
 
-def bus_call(bus, message, loop):
-    t = message.type
-    if t == Gst.MessageType.EOS:
-        sys.stdout.write("End-of-stream\n")
-        logger.common_logger.debug(f"End-of-stream\n")
-        loop.quit()
-    elif t==Gst.MessageType.WARNING:
-        err, debug = message.parse_warning()
-        sys.stderr.write("Warning: %s: %s\n" % (err, debug))
-        logger.common_logger.debug(f"Warning: {err} {debug}")
-    elif t == Gst.MessageType.ERROR:
-        err, debug = message.parse_error()
-        sys.stderr.write("Error: %s: %s\n" % (err, debug))
-        logger.common_logger.debug(f"Error: {err} {debug}")
-        loop.quit()
-    return True
+
+def is_aarch64():
+    return platform.uname()[4] == 'aarch64'
+
+sys.path.append('/opt/nvidia/deepstream/deepstream/lib')

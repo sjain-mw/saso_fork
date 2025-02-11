@@ -1,0 +1,15 @@
+car
+operator
+lp_arabic
+lp_english
+carbon-wire
+non operator
+truck
+tyre
+ub_operator
+top_truck
+top_car
+carbon-wire-connected
+top-carbon-wire
+top-carbon-wire-connected
+top-person

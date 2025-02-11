@@ -1,0 +1,505 @@
+{
+
+  "CAMERA_DETAILS":{
+    
+  "lane1_360_lpr":{
+    "type":"lpr",
+    "camera_uid":"9b41141d-1f24-4e5a-9735-48ed04f192ec",
+    "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+    "stage_id":"3b1bafc9-48c8-4160-87c9-111736558b34",
+    "stage":"360",
+    "lane_name":"lane1",
+    "check_camera_id":"lane1_360_top"
+},
+"lane1_360_top":{
+    "type":"check",
+    "camera_uid":"15243f74-a505-4e05-b0f1-1ade25db734d",
+    "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+    "stage_id":"3b1bafc9-48c8-4160-87c9-111736558b34",
+    "carbonstageId":"af4e2b3d-5ea3-4858-94b4-497f1a1eef23",
+    "stage":"360",
+    "lane_name":"lane1"
+},
+"lane1_ubtopfront":{
+    "type":"lpr",
+    "camera_uid":"3add14cb-3bd8-43a6-9732-3249d6dfd2eb",
+    "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+    "stage_id":"8a4d7979-db8c-49e0-a1ac-f2f6f8453c64",
+    "stage":"ubtopfront",
+    "lane_name":"lane1",
+    "previous_stage": "lane1_360_top"
+},
+"lane1_ubtopback":{
+    "type":"lpr",
+    "camera_uid":"d1b2a339-ee45-448a-83c7-6f91b8d55253",
+    "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+    "stage_id":"8a4d7979-db8c-49e0-a1ac-f2f6f8453c64",
+    "stage":"ubtopback",
+    "lane_name":"lane1",
+    "previous_stage": "lane1_360_top"
+},
+"lane1_ubbottomfront":{
+    "type":"check",
+    "camera_uid":"158fa9ba-f67d-44f0-9a0f-6890be661fcc",
+    "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+    "stage_id":"8a4d7979-db8c-49e0-a1ac-f2f6f8453c64",
+    "stage":"ubbottomfront",
+    "lane_name":"lane1",
+    "previous_stage": "lane1_360_top"
+},
+"lane1_ubbottomback":{
+    "type":"check",
+    "camera_uid":"bf219dce-66bc-4eac-8416-fc3037c766c3",
+    "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+    "stage_id":"8a4d7979-db8c-49e0-a1ac-f2f6f8453c64",
+    "stage":"ubbottomback",
+    "lane_name":"lane1",
+    "previous_stage": "lane1_360_top"
+},
+"lane1_brake":{
+    "type":"both",
+    "camera_uid":"faa14aa9-3097-49a9-a241-8db467801752",
+    "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+    "stage_id":"29729162-69cb-4fc5-b146-35d72d40e431",
+    "stage":"brake",
+    "lane_name":"lane1",
+    "previous_stage": "lane1_ub"
+} ,
+
+
+    "lane2_360_lpr":{
+      "type":"lpr",
+      "camera_uid":"78a26667-9dc1-4262-b882-7c1a833f5c6c",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"a447115b-8646-4d50-a737-696ecdb6e3a1",
+      "stage":"360",
+      "lane_name":"lane2",
+      
+      "check_camera_id":"lane2_360_top"
+  },
+  "lane2_360_top":{
+      "type":"check",
+      "camera_uid":"bb92b856-e464-478c-a83a-1dbe957a63f3",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"a447115b-8646-4d50-a737-696ecdb6e3a1",
+      "carbonstageId":"ec239d87-1186-4bbf-868d-c81c96ce4108",
+      "stage":"360",
+      "lane_name":"lane2"
+      
+  },
+  "lane2_ubtopfront":{
+      "type":"lpr",
+      "camera_uid":"1de4adec-3054-4897-a1a8-7bef3f8bab14",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"b8800acb-b1c1-4415-ae13-2f70aaa9546c",
+      "stage":"ubtopfront",
+      "lane_name":"lane2",
+      "previous_stage": "lane2_360_top"
+  },
+  "lane2_ubtopback":{
+      "type":"lpr",
+      "camera_uid":"683f681a-9197-49a4-9ae4-353f2feefd7f",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"b8800acb-b1c1-4415-ae13-2f70aaa9546c",
+      "stage":"ubtopback",
+      "lane_name":"lane2",
+      "previous_stage": "lane2_360_top"
+  },
+  "lane2_ubbottomfront":{
+      "type":"check",
+      "camera_uid":"6692b5d3-df89-4f03-b1c9-c2d7449a4167",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"b8800acb-b1c1-4415-ae13-2f70aaa9546c",
+      "stage":"ubbottomfront",
+      "lane_name":"lane2",
+      "previous_stage": "lane2_360_top"
+  },
+  "lane2_ubbottomback":{
+      "type":"check",
+      "camera_uid":"f13c2b8c-efbe-4ad7-823f-e3ad9f73a45d",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"b8800acb-b1c1-4415-ae13-2f70aaa9546c",
+      "stage":"ubbottomback",
+      "lane_name":"lane2",
+      "previous_stage": "lane2_360_top"
+  },
+  "lane2_brake":{
+      "type":"both",
+      "camera_uid":"4cb41bb5-db9b-4a5c-948b-f2688d18aa0e",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"818795fc-6535-4d73-88d8-6307c46b2aaf",
+      "stage":"brake",
+      "lane_name":"lane2",
+      "previous_stage": "lane2_ub"
+  },
+  
+  "lane3_360_lpr":{
+      "type":"lpr",
+      "camera_uid":"0f823482-294e-4d80-85cf-3b34645efd58",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"30d3ed73-176d-49a3-abc1-cd69f58c62b1",
+      "stage":"360",
+      "lane_name":"lane3",
+      
+      "check_camera_id":"lane3_360_top"
+  },
+  "lane3_360_top":{
+      "type":"check",
+      "camera_uid":"77c74116-db4a-4e34-8633-8b0ac5130433",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"30d3ed73-176d-49a3-abc1-cd69f58c62b1",
+      "carbonstageId":"2a076efb-569b-45fc-8d4a-8684be9469f1",
+      "stage":"360",
+      "lane_name":"lane3"
+     
+  },
+  "lane3_ubtopfront":{
+      "type":"lpr",
+      "camera_uid":"8fd67406-b965-44d6-865a-f0d2847be252",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"ca85d62a-b2c4-45a0-ad13-4761ed1dcb09",
+      "stage":"ubtopfront",
+      "lane_name":"lane3",
+      "previous_stage": "lane3_360_top"
+  },
+  "lane3_ubtopback":{
+      "type":"lpr",
+      "camera_uid":"f9a209aa-d935-4845-9337-ba315100d5a1",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"ca85d62a-b2c4-45a0-ad13-4761ed1dcb09",
+      "stage":"ubtopback",
+      "lane_name":"lane3",
+      "previous_stage": "lane3_360_top"
+  },
+  "lane3_ubbottomfront":{
+      "type":"check",
+      "camera_uid":"4812fc7a-b7fd-4f92-b673-364b05e1bd0c",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"ca85d62a-b2c4-45a0-ad13-4761ed1dcb09",
+      "stage":"ubbottomfront",
+      "lane_name":"lane3",
+      "previous_stage": "lane3_360_top"
+  },
+  "lane3_ubbottomback":{
+      "type":"check",
+      "camera_uid":"91bdda3f-3eca-457d-b1ad-a8545ec99b66",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"ca85d62a-b2c4-45a0-ad13-4761ed1dcb09",
+      "stage":"ubbottomback",
+      "lane_name":"lane3",
+      "previous_stage": "lane3_360_top"
+  },
+  "lane3_brake":{
+      "type":"both",
+      "camera_uid":"d4567d42-6f8c-48a6-b9dd-16944064f388",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"4b40caee-a7b7-4a35-8e4a-5f542806b0ee",
+      "stage":"brake",
+      "lane_name":"lane3",
+      "previous_stage": "lane3_ub"
+  },
+  
+  "lane4_360_lpr":{
+      "type":"lpr",
+      "camera_uid":"0f823482-294e-4d80-85cf-3b34645efd58",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"8f24d7c3-1725-4ec7-86aa-6b32acbfabff",
+      "stage":"360",
+      "lane_name":"lane4",
+     
+      "check_camera_id":"lane4_360_top"
+  },
+  "lane4_360_top":{
+      "type":"check",
+      "camera_uid":"0086b57c-0aba-4e07-9deb-9c1a192f999d",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"8f24d7c3-1725-4ec7-86aa-6b32acbfabff",
+      "carbonstageId":"ed0dfbad-4039-4d93-b2e6-4c3053eea54a",
+      "stage":"360",
+      "lane_name":"lane4"
+      
+  },
+  "lane4_ubtopfront":{
+      "type":"lpr",
+      "camera_uid":"8fd67406-b965-44d6-865a-f0d2847be252",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"674df755-6f0a-4eec-886f-2a82ae5f0332",
+      "stage":"ubtopfront",
+      "lane_name":"lane4",
+      "previous_stage": "lane4_360_top"
+  },
+  "lane4_ubtopback":{
+      "type":"lpr",
+      "camera_uid":"f9a209aa-d935-4845-9337-ba315100d5a1",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"674df755-6f0a-4eec-886f-2a82ae5f0332",
+      "stage":"ubtopback",
+      "lane_name":"lane4",
+      "previous_stage": "lane4_360_top"
+  },
+  "lane4_ubbottomfront":{
+      "type":"check",
+      "camera_uid":"de1adba1-bf5b-438a-b9f6-c2ceb16d9557",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"674df755-6f0a-4eec-886f-2a82ae5f0332",
+      "stage":"ubbottomfront",
+      "lane_name":"lane4",
+      "previous_stage": "lane4_360_top"
+  },
+  "lane4_ubbottomback":{
+      "type":"check",
+      "camera_uid":"d1d5f1fe-2770-4021-ad77-6ff0c9967676",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"674df755-6f0a-4eec-886f-2a82ae5f0332",
+      "stage":"ubbottomback",
+      "lane_name":"lane4",
+      "previous_stage": "lane4_360_top"
+  },
+  "lane4_brake":{
+      "type":"both",
+      "camera_uid":"c2b9f04d-5784-42ff-bb57-20d300056ed6",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"3b048c2f-36c2-4adf-8dba-e5574d6bf4a6",
+      "stage":"brake",
+      "lane_name":"lane4",
+      "previous_stage": "lane4_ub"
+  },
+  "laneright_main":{
+      "type":"lpr",
+      "camera_uid":"df677d1b-a467-461d-96be-e33514e99704",
+      "station_id":"06a7d884-8e6c-4f7a-95a4-043506d2be13",
+      "stage_id":"",
+      "stage":"main_lpr",
+      "lane_name":"laneright",
+      "previous_stage": "lane2_brake"
+  }
+  },
+
+
+  "LANES_TO_USE":
+  [
+      "lane3"
+  ],
+
+  "ROIS":
+  {
+
+    "lane1_360_lpr": {
+    "entry_roi": [[ 414 , 415 ],[ 1582 , 593 ],[ 1617 , 1076 ],[ 4 , 1077 ],[ 3 , 698 ]]
+  },
+  "lane1_360_top": {
+    "entry_roi": [[ 12 , 366 ],[ 773 , 77 ],[ 1269 , 534 ],[ 257 , 964 ]]
+  },
+  "lane1_ubtopfront": {
+    "entry_roi": [[1583, 227], [1086, 245], [49, 1080], [1570, 1080]],
+    "subregion_ubtopfront_subregion1": [[1086, 245], [1576, 227], [1583, 380], [908, 380]],
+    "subregion_ubtopfront_subregion2": [[908, 380], [1576, 380], [1576, 626], [644, 601]],
+    "subregion_ubtopfront_subregion3": [[638, 601], [1576, 626], [1564, 1074], [49, 1080]]
+  },
+  "lane1_ubtopback": {
+    "entry_roi": [[504, 907], [1652, 687], [819, 91], [378, 115]],
+    "subregion_ubtopback_subregion1": [[498, 907], [1642, 687], [1121, 312], [417, 362]],
+    "subregion_ubtopback_subregion2": [[417, 362], [1116, 307], [914, 160], [393, 190]],
+    "subregion_ubtopback_subregion3": [[393, 190], [908, 160], [816, 92], [380, 117]]
+  },
+  "lane1_ubbottomfront": {
+    "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+    "subregion_ubbottomfront_subregion1": [[877, 738], [1046, 738], [1121, 874], [847, 874]],
+    "subregion_ubbottomfront_subregion2": [[847, 874], [1117, 874], [1216, 1077], [789, 1077]]
+  },
+  "lane1_ubbottomback": {
+    "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+    "subregion_ubbottomback_subregion1": [[617, 975], [1016, 980], [1043, 1075], [552, 1077]],
+    "subregion_ubbottomback_subregion2": [[717, 792], [965, 800], [1016, 980], [617, 972]],
+    "subregion_ubbottomback_subregion3": [[765, 695], [938, 700], [962, 800], [714, 792]]
+  },
+  "lane1_brake": {
+    "entry_roi": [[1480, 539], [674, 422], [0, 715], [0, 1080], [1365, 1080]],
+    "tyre_roi": [[1245, 610], [941, 546], [807, 714], [1133, 798]],
+    "front_roi": [[1400, 914], [220, 608], [0, 713], [0, 1080], [1364, 1080]]
+  },
+
+
+    "lane2_360_top": {
+    "entry_roi": [[ 365 , 415 ],[ 1024 , 62 ],[ 1561 , 471 ],[ 647 , 991 ]]
+  },
+  "lane2_360_lpr": {
+    "entry_roi": [[ 378 , 572 ],[ 1333 , 405 ],[ 1914 , 765 ],[ 1915 , 1073 ],[ 498 , 1073 ]]
+  },
+  "lane2_ubtopfront": {
+    "entry_roi": [[362, 307], [644, 264], [1442, 697], [687, 1052]],
+    "subregion_ubtopfront_subregion1": [[360, 304], [644, 264], [748, 319], [398, 380]],
+    "subregion_ubtopfront_subregion2": [[398, 380], [748, 319], [1018, 466], [484, 589]],
+    "subregion_ubtopfront_subregion3": [[484, 589], [1012, 460], [1435, 699], [681, 1055]]
+  },
+  "lane2_ubtopback": {
+    "entry_roi": [[1355, 1077], [889, 1075], [299, 881], [1369, 291], [1706, 329]],
+    "subregion_ubtopback_subregion1": [[1352, 1075], [889, 1074], [302, 882], [902, 549], [1537, 689]],
+    "subregion_ubtopback_subregion2": [[908, 549], [1540, 690], [1650, 444], [1202, 383]],
+    "subregion_ubtopback_subregion3": [[1202, 377], [1650, 444], [1699, 334], [1368, 291]]
+  },
+  "lane2_ubbottomfront": {
+    "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+    "subregion_ubbottomfront_subregion1": [[852, 756], [1012, 761], [1064, 845], [842, 845]],
+    "subregion_ubbottomfront_subregion2": [[842, 845], [1059, 845], [1120, 981], [805, 986]],
+    "subregion_ubbottomfront_subregion3": [[805, 981], [1120, 981], [1167, 1075], [776, 1075]]
+  },
+  "lane2_ubbottomback": {
+    "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+    "subregion_ubbottomback_subregion1": [[772, 963], [1082, 967], [1129, 1075], [706, 1075]],
+    "subregion_ubbottomback_subregion2": [[824, 845], [1045, 850], [1082, 967], [772, 963]],
+    "subregion_ubbottomback_subregion3": [[861, 775], [1031, 779], [1049, 850], [824, 845]]
+  },
+  "lane2_brake": {
+    "entry_roi": [[1567, 533], [866, 451], [0, 917], [0, 1080], [1462, 1080]],
+    "tyre_roi": [[1324, 613], [1233, 793], [891, 726], [1047, 563]],
+    "front_roi": [[1513, 881], [317, 669], [0, 854], [0, 1080], [1457, 1080]]
+  },
+
+  
+
+    "lane3_360_top": {
+      "entry_roi":[[ 211 , 337 ],[ 830 , 85 ],[ 1317 , 512 ],[ 498 , 934 ]]
+    },
+    "lane3_360_lpr": {
+      "entry_roi": [[ 451 , 403 ],[ 1464 , 537 ],[ 1276 , 1041 ],[ 220 , 1046 ]]
+    },
+    "lane3_ubtopfront": {
+      "entry_roi": [[1276, 264], [902, 276], [0, 1019], [540, 1080], [1092, 1080]],
+      "subregion_ubtopfront_subregion1": [[896, 276], [1276, 264], [1239, 405], [773, 387]],
+      "subregion_ubtopfront_subregion2": [[767, 385], [1239, 401], [1178, 692], [478, 625]],
+      "subregion_ubtopfront_subregion3": [[478, 625], [1178, 692], [1092, 1079], [546, 1079], [0, 1017]]
+    },
+    "lane3_ubtopback": {
+      "entry_roi": [[621, 1069], [1496, 694], [485, 226], [115, 289]],
+      "subregion_ubtopback_subregion1": [[619, 1069], [1494, 692], [918, 426], [309, 589]],
+      "subregion_ubtopback_subregion2": [[310, 591], [918, 426], [641, 297], [183, 387]],
+      "subregion_ubtopback_subregion3": [[114, 285], [483, 224], [639, 296], [180, 387]]
+    },
+    "lane3_ubbottomfront": {
+      "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+      "subregion_ubbottomfront_subregion1": [[855, 724], [998, 727], [1045, 812], [842, 803]],
+      "subregion_ubbottomfront_subregion2": [[840, 803], [1047, 812], [1118, 990], [776, 981]],
+      "subregion_ubbottomfront_subregion3": [[781, 983], [1122, 988], [1162, 1078], [749, 1078]]
+    },
+    "lane3_ubbottomback": {
+      "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+      "subregion_ubbottomback_subregion1": [[696, 997], [1034, 1002], [1063, 1077], [652, 1078]],
+      "subregion_ubbottomback_subregion2": [[778, 846], [991, 851], [1032, 1002], [698, 995]],
+      "subregion_ubbottomback_subregion3": [[805, 790], [971, 793], [991, 851], [779, 846]]
+    },
+    "lane3_brake": {
+      "entry_roi": [[1462, 600], [525, 493], [2, 769], [4, 1080], [1302, 1072]],
+      "tyre_roi": [[1222, 630], [924, 569], [765, 721], [1116, 802]],
+      "front_roi": [[1317, 934], [183, 674], [3, 769], [3, 1080], [1286, 1073]]
+    },
+
+
+    "lane4_360_top": {
+    "entry_roi": [[ 144 , 362 ],[ 732 , 63 ],[ 1294 , 407 ],[ 479 , 906 ]]
+  },
+  "lane4_360_lpr": {
+    "entry_roi": [[ 309 , 690 ],[ 1197 , 454 ],[ 1863 , 830 ],[ 1903 , 1072 ],[ 406 , 1075 ]]
+  },
+  "lane4_ubtopfront": {
+    "entry_roi": [[317, 224], [780, 132], [1912, 742], [1916, 1076], [412, 1076]],
+    "subregion_ubtopfront_subregion1": [[315, 226], [778, 132], [918, 208], [329, 329]],
+    "subregion_ubtopfront_subregion2": [[329, 328], [920, 205], [1276, 396], [362, 632]],
+    "subregion_ubtopfront_subregion3": [[362, 629], [1270, 395], [1916, 745], [1916, 1074], [414, 1074]]
+  },
+  "lane4_ubtopback": {
+    "entry_roi": [[1410, 318], [1749, 353], [1634, 1079], [1130, 1079], [535, 879]],
+    "subregion_ubtopback_subregion1": [[1632, 1079], [1126, 1075], [536, 877], [1053, 547], [1694, 684]],
+    "subregion_ubtopback_subregion2": [[1692, 686], [1052, 547], [1292, 391], [1732, 452]],
+    "subregion_ubtopback_subregion3": [[1296, 391], [1730, 452], [1747, 352], [1409, 318]]
+  },
+  "lane4_ubbottomfront": {
+    "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+    "subregion_ubbottomfront_subregion1": [[824, 737], [974, 742], [1035, 845], [805, 841]],
+    "subregion_ubbottomfront_subregion2": [[805, 841], [1035, 845], [1153, 1075], [734, 1075]]
+  },
+  "lane4_ubbottomback": {
+    "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+    "subregion_ubbottomback_subregion2": [[776, 882], [1030, 892], [1088, 1078], [686, 1078]],
+    "subregion_ubbottomback_subregion3": [[830, 775], [998, 775], [1029, 892], [776, 882]]
+  },
+  "lane4_brake": {
+    "entry_roi": [[1361, 662], [663, 483], [3, 751], [3, 1080], [1129, 1076]],
+    "tyre_roi": [[1258, 653], [1005, 576], [835, 716], [1123, 798]],
+    "front_roi": [[1260, 954], [300, 631], [0, 752], [0, 1080], [1211, 1080]]
+  },
+    
+    
+    
+    "lane5_360_top": {
+    "entry_roi": [[550, 1001], [1461, 514], [957, 7], [162, 12], [162, 12]]
+  },
+  "lane5_360_lpr": {
+    "entry_roi": [[419, 539], [1237, 288], [1912, 624], [1913, 1066], [590, 1073]]
+  },
+  "lane5_ubtopfront": {
+    "entry_roi": [[844, 915], [1318, 719], [582, 281], [422, 307]],
+    "subregion_ubtopfront_subregion1": [[424, 277], [536, 257], [624, 316], [468, 337]],
+    "subregion_ubtopfront_subregion2": [[468, 337], [624, 316], [782, 415], [563, 465]],
+    "subregion_ubtopfront_subregion3": [[563, 465], [782, 415], [1100, 615], [764, 713]]
+  },
+  "lane5_ubtopback": {
+    "entry_roi": [[649, 789], [1010, 938], [1536, 367], [1347, 341]]
+  },
+  "lane5_ubbottomfront": {
+    "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+    "subregion_ubbottomfront_subregion1": [[868, 733], [1009, 734], [1049, 819], [858, 816]],
+    "subregion_ubbottomfront_subregion2": [[849, 816], [1049, 819], [1117, 962], [808, 963]],
+    "subregion_ubbottomfront_subregion3": [[803, 963], [1117, 962], [1171, 1077], [778, 1077]]
+  },
+  "lane5_ubbottomback": {
+    "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+    "subregion_ubbottomback_subregion1": [[784, 940], [1089, 945], [1123, 1077], [706, 1077]],
+    "subregion_ubbottomback_subregion2": [[857, 804], [1053, 816], [1089, 945], [784, 940]],
+    "subregion_ubbottomback_subregion3": [[894, 736], [1030, 740], [1053, 816], [857, 804]]
+  },
+  "lane5_brake": {
+    "entry_roi": [[1353, 577], [754, 450], [21, 794], [23, 1061], [1098, 1050]],
+    "tyre_roi": [[1334, 598], [1066, 545], [874, 743], [1222, 802]],
+    "front_roi": [[1003, 870], [268, 575], [6, 749], [9, 1061], [803, 1067]]
+  },
+
+
+    "lane6_360_top": {
+    "entry_roi": [[550, 1001], [1461, 514], [957, 7], [162, 12], [162, 12]]
+  },
+  "lane6_360_lpr": {
+    "entry_roi": [[419, 539], [1237, 288], [1912, 624], [1913, 1066], [590, 1073]]
+  },
+  "lane6_ubtopfront": {
+    "entry_roi": [[844, 915], [1318, 719], [582, 281], [422, 307]],
+    "subregion_ubtopfront_subregion1": [[424, 277], [536, 257], [624, 316], [468, 337]],
+    "subregion_ubtopfront_subregion2": [[468, 337], [624, 316], [782, 415], [563, 465]],
+    "subregion_ubtopfront_subregion3": [[563, 465], [782, 415], [1100, 615], [764, 713]]
+  },
+  "lane6_ubtopback": {
+    "entry_roi": [[649, 789], [1010, 938], [1536, 367], [1347, 341]]
+  },
+  "lane6_ubbottomfront": {
+    "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+    "subregion_ubbottomfront_subregion1": [[868, 733], [1009, 734], [1049, 819], [858, 816]],
+    "subregion_ubbottomfront_subregion2": [[849, 816], [1049, 819], [1117, 962], [808, 963]],
+    "subregion_ubbottomfront_subregion3": [[803, 963], [1117, 962], [1171, 1077], [778, 1077]]
+  },
+  "lane6_ubbottomback": {
+    "entry_roi": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+    "subregion_ubbottomback_subregion1": [[784, 940], [1089, 945], [1123, 1077], [706, 1077]],
+    "subregion_ubbottomback_subregion2": [[857, 804], [1053, 816], [1089, 945], [784, 940]],
+    "subregion_ubbottomback_subregion3": [[894, 736], [1030, 740], [1053, 816], [857, 804]]
+  },
+  "lane6_brake": {
+    "entry_roi": [[1353, 577], [754, 450], [21, 794], [23, 1061], [1098, 1050]],
+    "tyre_roi": [[1334, 598], [1066, 545], [874, 743], [1222, 802]],
+    "front_roi": [[1003, 870], [268, 575], [6, 749], [9, 1061], [803, 1067]]
+  },
+  "laneright_main": {
+    "entry_roi": [[880, 698], [1703, 255], [1164, 164], [364, 359]]
+  }
+      }
+
+}
